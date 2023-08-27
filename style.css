@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1b2430;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+
+.container__response{
+    display: grid;
+    background-color: #007bff;
+    padding: 1rem;
+    border: 1px solid black;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 1rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.container__response div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #e84959;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    transition: transform 0.2s;
+}
+
+.container__response div:hover{
+    transform: scale(1.1);
+}
+
+
+.container__response{
+    grid-template-areas:
+    "primero segundo tercero"
+    "cuarto quinto sexto"
+    "septimo octavo noveno";
+}
+
+.primero{
+    grid-area: primero;
+}
+
+.segundo{
+    grid-area: segundo;
+}
+
+.tercero{
+    grid-area: tercero;
+}
+
+.cuarto{
+    grid-area: cuarto;
+}
+
+.quinto{
+    grid-area: quinto;
+}
+
+.sexto{
+    grid-area: sexto;
+}
+
+.septimo{
+    grid-area: septimo;
+}
+
+.octavo{
+    grid-area: octavo;
+}
+
+.noveno{
+    grid-area: noveno;
+}
+
+
